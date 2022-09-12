@@ -1,0 +1,116 @@
+body{
+    background: linear-gradient(to top,#6699ff, #001a4d);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'LGC';
+    src: url(./fonts/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: 'LGCBold';
+    src: url(./fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+#image{
+    height: 100%;
+    width: auto;
+}
+
+img{
+    height: 100%;
+    width: auto;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#main{
+    background-color: white;
+    height: 90vh;
+    width: 70vw;
+    margin-top: 4vh;
+    border-radius: 15px;
+    display: flex;
+}
+
+#main-header{
+    margin: 7vh 3vw 0;
+}
+
+#form-main{
+    margin: 2vh 3vw;
+}
+
+p{
+    font-family: 'LGCBold';
+    font-size: 26px;
+    line-height: 50px;
+    margin: 1.5vh 0 1vh;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30%;
+    width: 100%;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'LGC';
+    font-size: 18px;
+}
+
+input{
+    border: 1px gray solid;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+}
+
+button{
+    margin: 1vh 0 3.5vh;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #6699ff;
+    color: white;
+}
+
+.ital{
+    font-style: italic;
+}
+
+.input{
+   margin: 1vh 5vw 2vh 0;
+}
+
+
+a:link, a:visited{
+    color: #0044ff;
+    text-decoration: none;
+}
+
+
+input.filled:valid{
+    border: 2px green solid;
+}
+
+input.filled:valid + span::before{
+    content: '✔';
+    color: green;
+}
+
+input.filled:invalid{
+    border: 2px red solid;
+}
+
+input.filled:invalid + span::before{
+    content: '✖';
+    color: red;
+}

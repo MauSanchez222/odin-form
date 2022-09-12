@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <div id="image">
+            <img src="https://i.pinimg.com/736x/db/ae/1b/dbae1bfd6926f633acbc2b0a74c202fb.jpg" alt="">
+        </div>
+        <div id="header-form-wrapper">
+            <div id="main-header">
+                <p>This is not a real online service! You know you need something <br> like this in your life to help you realize your deepest dreams.
+                <br>Sign up <span class="ital">now</span> to get started.</p>
+                <p>You <span class="ital">know</span> you want to.</p>
+                <p>Let's do this!</p>
+            </div>
+
+            <div id="form-main">
+                <form action="" autocomplete="off">
+                    <div class="input" id="inp1">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="f-name" minlength="2" maxlength="15">
+                        <span></span>
+                     </div>
+
+                     <div class="input" id="inp2">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="l-name" minlength="2" maxlength="15">
+                        <span></span>
+                     </div>
+
+                     <div class="input" id="inp3">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                        <span></span>    
+                     </div>
+
+                     <div class="input" id="inp4">
+                        <label for="phone-nr">Phone Number</label>
+                        <input type="tel" id="phone-nr" name="phone-nr" minlength="9" maxlength="16" pattern="+[0-9]{2} [0-9]{10}" placeholder="+12 1234567890">
+                        <span></span>
+                     </div>
+
+                     <div class="input" id="inp5">
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" minlength="6" required>
+                        <span></span>
+                     </div>
+                  
+                     <div class="input" id="inp6">
+                        <label for="conf-password">Confirm Password *</label>
+                        <input type="password" id="conf-password" name="conf-password" minlength="6" required>
+                        <span></span>
+                     </div>
+                     
+                     <button type="submit">Create Account</button>
+                </form> 
+                <span>Already have an account? <a href="">Log in</a></span>
+
+            </div>
+                
+        </div>
+    </div>
+</body>
+</html>
