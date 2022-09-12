@@ -30,6 +30,9 @@ form.addEventListener('change', (event) => {
     if (passInp.value !== confInp.value){
         event.preventDefault();
         confInp.setCustomValidity('Passwords don\'t match');
+        if(confInp.class === 'filled'){
+            confInp.reportValidity();
+        }
     }
     else{
         confInp.setCustomValidity('')
